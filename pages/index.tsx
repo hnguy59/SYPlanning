@@ -12,7 +12,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 opacity-50 hover:opacity-100"
+              className="text-lg duration-500 opacity-50 hover:opacity-100"
             >
               {item.name}
             </Link>
@@ -25,12 +25,15 @@ export default function Home() {
         SY Planning
       </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in flex flex-col items-center justify-center gap-10">
+      <div className="my-16 text-left animate-fade-in flex flex-col items-start justify-center gap-10">
         <h2 className="text-sm opacity-50">
-          Hi, my name is <b>Sean Yong</b>. I'm an <b>Urban Planner</b> that aspires to create better
-          places for people to live, work and play.
+          Hi, my name is <b className="text-lg">Shaun Yong</b>.
         </h2>
-        <Link href="/about">
+        <h2 className="text-sm opacity-50 text-justify max-w-sm">
+          I'm an <b className="text-lg">Urban Planner</b> that aspires to create better places for
+          people to <b>live, work and play</b>.
+        </h2>
+        <Link href="/about" className="flex items-center justify-center w-full">
           <button className="relative rounded-full px-3 py-1 text-sm leading-6 opacity-50 ring-1 ring-black/50 hover:ring-black/100 dark:ring-white/50 dark:hover:ring-white/100">
             Get started
           </button>

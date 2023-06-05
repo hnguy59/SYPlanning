@@ -10,6 +10,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>SY Planning</title>
       </Head>
       <Layout>
         <Component {...pageProps} />

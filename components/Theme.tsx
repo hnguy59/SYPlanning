@@ -13,7 +13,7 @@ export function Theme() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="ml-1 z-50 rounded p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 sm:ml-2 absolute top-10 right-10"
+      className="ml-1 z-50 rounded p-1.5 hover:bg-gray-200 dark:hover:bg-gray-700 sm:ml-2 absolute bottom-10 right-10"
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
     >
       <svg
