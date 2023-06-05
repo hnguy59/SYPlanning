@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  #refs ~ ul > li {
+    word-break: break-all;
+  }
+}
+
+@font-face {
+  font-family: 'CalSans';
+  src: url('../public/fonts/CalSans-SemiBold.ttf');
+}
+
+.dark .dark\:prose-dark blockquote {
+  background: #363535;
+  border-left-color: #b7abab !important;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html,
+.lightbox-overlay {
+  /* margin-left: calc(100vw - 100%); */
+  width: 100vw;
+}
+
+html.prevent-scroll {
+  overflow-y: hidden;
+}
+html.lightbox-loading,
+html.lightbox-loading * {
+  cursor: wait !important;
+}
+
+.prose > ul > li:last-child {
+  margin-bottom: 1.25em;
+}
+.prose > ul > li:first-child {
+  margin-top: 1.25em;
+}
+
+.prose > ul > li > *:last-child {
+  margin-bottom: 0;
+}
+
+.prose > ul > li > *:first-child {
+  margin-top: 0;
+}
+
+.prose :where(thead th):not(:where([class~='not-prose'] *)) {
+  color: unset;
+}
+
+.prose ol li:before {
+  background-color: transparent !important;
+}
+
+.prose .code-line {
+  font-size: 16px;
+}
+
+.prose hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+* {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.thumbnail-image img {
+  border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+  .thumbnail-image {
+    margin: 0 -20px;
+  }
+}
+@media (min-width: 768px) {
+  .thumbnail-image {
+    margin: 0 -40px;
+  }
+}
+@media (min-width: 1024px) {
+  .thumbnail-image {
+    margin: 0 -130px;
+  }
+}
+@media (min-width: 1366px) {
+  .thumbnail-image {
+    margin: 0 -150px;
+  }
+}
