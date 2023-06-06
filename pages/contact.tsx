@@ -47,7 +47,7 @@ export default function Contact() {
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
                   aria-hidden="true"
                 />
-                <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 bg-zinc-900  group-hover:text-black group-hover:bg-zinc-200 border-zinc-500 group-hover:border-zinc-900 drop-shadow-orange dark:text-zinc-900 dark:group-hover:border-zinc-200 dark:bg-zinc-200 dark:group-hover:text-white dark:group-hover:bg-zinc-900">
+                <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full bg-zinc-200 group-hover:bg-zinc-300 border-zinc-500 group-hover:border-zinc-900 drop-shadow-orange dark:group-hover:border-zinc-200 dark:bg-zinc-900 dark:group-hover:bg-zinc-700">
                   {s.icon}
                 </span>{' '}
                 <div className="z-10 flex flex-col items-center">
