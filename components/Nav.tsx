@@ -2,13 +2,16 @@
 import { navigation } from '@/util/data'
 import clsx from 'clsx'
 import { ArrowLeft } from 'lucide-react'
+import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useRef, useState } from 'react'
+import { Theme } from './Theme'
 
 export const Navigation: React.FC = () => {
   const ref = useRef<HTMLElement>(null)
   const router = useRouter()
+  const { theme, resolvedTheme } = useTheme()
   const [isIntersecting, setIntersecting] = useState(true)
 
   useEffect(() => {
@@ -26,7 +29,7 @@ export const Navigation: React.FC = () => {
           isIntersecting ? 'bg-zinc-900/0 border-transparent' : 'bg-zinc-900/500 border-transparent'
         }`}
       >
-        <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+        <div className="container flex flex-row-reverse items-center justify-between px-6 mx-auto">
           <div className="flex justify-between gap-8 items-center ">
             {navigation.map((item) => (
               <Link
@@ -41,14 +44,18 @@ export const Navigation: React.FC = () => {
                 {item.name}
               </Link>
             ))}
+            <Theme />
           </div>
-          <img
-            src="/images/SY-planning-no-background.png"
-            alt="logo"
-            className="w-24 mr-auto ml-10"
-          />
-          <Link href="/" className="duration-200 opacity-50 hover:opacity-100">
-            <ArrowLeft className="w-6 h-6" />
+          <Link href="/" className="container flex justify-start w-fit">
+            <img
+              src={
+                theme === 'dark' || resolvedTheme === 'dark'
+                  ? '/images/black-logo.png'
+                  : '/images/white-logo.png'
+              }
+              alt="logo"
+              className="w-32"
+            />
           </Link>
         </div>
       </div>
