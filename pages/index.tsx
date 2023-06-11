@@ -2,10 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import Particles from '../components/Particles'
 import { navigation } from '@/util/data'
+import { Theme } from '@/components/Theme'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl dark:from-black dark:via-zinc-600/20 dark:to-black from-white via-zinc-600/20 to-white">
+    <div className="flex flex-col h-screen items-center justify-center w-screen overflow-hidden bg-gradient-to-tl dark:from-black dark:via-zinc-600/20 dark:to-black from-white via-zinc-600/20 to-white">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-5">
           {navigation.map((item) => (
@@ -35,6 +36,9 @@ export default function Home() {
             Get started
           </button>
         </Link>
+        <div className="flex w-full items-center justify-center">
+          <Theme />
+        </div>
       </div>
     </div>
   )

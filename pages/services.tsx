@@ -1,8 +1,12 @@
 import { Navigation } from '@/components/Nav'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import clsx from 'clsx'
+import { useTheme } from 'next-themes'
 import React from 'react'
 
 export default function About() {
+  const { theme, resolvedTheme } = useTheme()
+
   return (
     <div className="bg-gradient-to-tl dark:from-black dark:via-zinc-600/20 dark:to-black from-white via-zinc-600/20 to-white">
       <Navigation />
@@ -25,7 +29,10 @@ export default function About() {
             </div>
             <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-32 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
               <img
-                className="max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full"
+                className={clsx(
+                  'max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full',
+                  (theme === 'light' || resolvedTheme === 'light') && 'invert'
+                )}
                 src="/images/diagram.png"
                 alt="diagram"
               />

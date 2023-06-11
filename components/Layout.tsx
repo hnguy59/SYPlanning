@@ -1,12 +1,14 @@
 import React, { ReactNode } from 'react'
-import { Theme } from './Theme'
+import Footer from './Footer'
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
-    <>
-      <Theme />
-      {children}
-    </>
+    <div className="min-h-screen flex flex-col">
+      <div className="relative h-auto">
+        {children}
+        <Footer />
+      </div>
+    </div>
   )
 }
 
