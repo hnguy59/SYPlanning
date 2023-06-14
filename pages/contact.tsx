@@ -3,29 +3,30 @@ import { Facebook, Github, Linkedin, Mail, PhoneCall, Twitter } from 'lucide-rea
 import Link from 'next/link'
 import { Navigation } from '../components/Nav'
 import { Card } from '../components/Card'
+import { siteData } from '@/util/data'
 
 const socials = [
   {
     icon: <Facebook size={20} />,
-    href: '',
+    href: siteData.facebook,
     label: 'Facebook',
     handle: '',
   },
   {
     icon: <Linkedin size={20} />,
-    href: '',
+    href: siteData.linkedin,
     label: 'LinkedIn',
     handle: '',
   },
   {
     icon: <PhoneCall size={20} />,
-    href: '',
+    href: 'tel+' + siteData.phone,
     label: 'Phone',
     handle: '',
   },
   {
     icon: <Mail size={20} />,
-    href: '',
+    href: 'mailto:' + siteData.email,
     label: 'Email',
     handle: '',
   },
@@ -42,6 +43,7 @@ export default function Contact() {
               <Link
                 href={s.href}
                 className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+                target="_blank"
               >
                 <span
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
@@ -62,6 +64,13 @@ export default function Contact() {
             </Card>
           ))}
         </div>
+      </div>
+      <div className="flex justify-center items-center w-screen">
+        <img
+          src="/images/aerial-houses.jpg"
+          alt="aerial view of houses"
+          className="w-100 rounded-xl shadow-xl ring-1 ring-gray-400/10 h-[32rem] md:-ml-4 lg:-ml-0"
+        />
       </div>
     </div>
   )
