@@ -1,31 +1,32 @@
-;('use client')
+'use client'
 import { Facebook, Github, Linkedin, Mail, PhoneCall, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import { Navigation } from '../components/Nav'
 import { Card } from '../components/Card'
+import { siteData } from '@/util/data'
 
 const socials = [
   {
     icon: <Facebook size={20} />,
-    href: 'https://www.facebook.com/profile.php?id=100092514035846',
+    href: siteData.facebook,
     label: 'Facebook',
     handle: '',
   },
   {
     icon: <Linkedin size={20} />,
-    href: 'https://www.linkedin.com/in/shaun-yong/',
+    href: siteData.linkedin,
     label: 'LinkedIn',
     handle: '',
   },
   {
     icon: <PhoneCall size={20} />,
-    href: 'tel:+61 432 823 351',
+    href: 'tel+' + siteData.phone,
     label: 'Phone',
     handle: '',
   },
   {
     icon: <Mail size={20} />,
-    href: 'mailto:shaun.yong@syplanning.com.au',
+    href: 'mailto:' + siteData.email,
     label: 'Email',
     handle: '',
   },
@@ -66,7 +67,7 @@ export default function Contact() {
       </div>
       <div className="flex justify-center items-center w-screen">
         <img
-          src="../public/images/aerial-houses.jpg"
+          src="/images/aerial-houses.jpg"
           alt="aerial view of houses"
           className="w-100 rounded-xl shadow-xl ring-1 ring-gray-400/10 h-[32rem] md:-ml-4 lg:-ml-0"
         />

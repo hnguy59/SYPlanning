@@ -26,7 +26,7 @@ export default function Home() {
         SY Planning
       </h1>
       <div className="opacity-40 dark:opacity-30 -z-50 absolute">
-        <img src="/images/mapsss.jpg" alt="building plans" className="h-screen w-fit" />
+        <img src="/images/maps.jpg" alt="building plans" className="h-screen w-fit" />
       </div>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-left animate-fade-in flex flex-col items-start justify-center gap-10">
@@ -45,7 +45,6 @@ export default function Home() {
             Get started
           </button>
         </Link>
-
         <div className="flex w-full items-center justify-center">
           <Theme />
         </div>

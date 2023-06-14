@@ -63,7 +63,7 @@ export default function About() {
                   </dl>
                 </div>
               </div>
-              <div className="flex justify-center items-center ">
+              <div className="flex justify-center items-center">
                 <img
                   src="/images/moree-railway.jpg"
                   alt="moree-railway"
@@ -88,9 +88,7 @@ export default function About() {
               </p>
               <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-32 lg:col-start-2 lg:row-span- lg:row-start-1 lg:overflow-hidden">
                 <img
-                  className={clsx(
-                    'max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full'
-                  )}
+                  className="max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 w-full"
                   src="/images/generic-house.jpg"
                   alt="generic house"
                 />

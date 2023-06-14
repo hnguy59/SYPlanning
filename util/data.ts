@@ -1,3 +1,4 @@
+import { Facebook } from 'lucide-react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -11,8 +12,8 @@ export const metadata: Metadata = {
     title: 'SY Planning',
     description:
       'Urban Planner that aspires to create better places for people to live, work and play.',
-    url: 'https://SYPlanning.com',
-    siteName: 'SYPlanning.com',
+    url: 'https://SYPlanning.com.au',
+    siteName: 'SYPlanning.com.au',
     images: [
       {
         url: 'https://chronark.com/og.png',
@@ -41,6 +42,13 @@ export const metadata: Metadata = {
   icons: {
     shortcut: '/favicon.png',
   },
+}
+
+export const siteData = {
+  facebook: 'https://www.facebook.com/profile.php?id=100092514035846',
+  linkedin: 'https://www.linkedin.com/in/shaun-yong/',
+  phone: '+61 432 823 351',
+  email: 'shaun.yong@syplanning.com.au',
 }
 
 export const navigation = [
