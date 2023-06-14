@@ -25,17 +25,27 @@ export default function Home() {
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-black dark:bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         SY Planning
       </h1>
+      <div className="opacity-40 dark:opacity-30 -z-50 absolute">
+        <img src="/images/mapsss.jpg" alt="building plans" className="h-screen w-fit" />
+      </div>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-left animate-fade-in flex flex-col items-start justify-center gap-10">
-        <h2 className="text-sm opacity-50 text-justify max-w-sm">
-          We are <b className="text-lg">Urban Planning Professionals</b> that aspire to create
-          better places for people to <b>live, work and play</b>.
+        <h2 className="text-med opacity-80 dark:opacity-50 text-center max-w-md">
+          We are <b className="text-">Urban Planning Professionals</b> that aspire to create better
+          places for people to <b>live, work & play</b>.
+          <br />
+          <br />
+          <p>
+            We specialise in <b>preparing & submitting Development Applications</b> in{' '}
+            <u>Queensland & New South Wales.</u>
+          </p>
         </h2>
         <Link href="/about" className="flex items-center justify-center w-full">
           <button className="relative rounded-full px-3 py-1 text-sm leading-6 opacity-50 ring-1 ring-black/50 hover:ring-black/100 dark:ring-white/50 dark:hover:ring-white/100">
             Get started
           </button>
         </Link>
+
         <div className="flex w-full items-center justify-center">
           <Theme />
         </div>
