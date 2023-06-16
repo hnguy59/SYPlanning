@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="bg-gradient-to-tl dark:from-black dark:via-zinc-600/20 dark:to-black from-white via-zinc-600/20 to-white">
       <Navigation />
-      <div className="container flex flex-col items-center justify-center px-4 mx-auto pt-[130px]">
+      <div className="container flex flex-col items-center justify-center px-4 mx-auto sm:pt-[130px]">
         <div className="overflow-hidden py-12 sm:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
