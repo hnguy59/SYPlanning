@@ -19,11 +19,9 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]  
-
+      "@/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
