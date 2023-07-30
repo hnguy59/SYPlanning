@@ -1,9 +1,10 @@
-import ButtonPrimary from './misc/ButtonPrimary'
-import ScrollAnimationWrapper from './Layout/ScrollAnimationWrapper'
+import ButtonPrimary from '../ButtonPrimary'
+import Image from 'next/image'
+import ScrollAnimationWrapper from '../Layout/ScrollAnimationWrapper'
+import { Sections } from '../Layout/Layout.helpers'
 import getScrollAnimation from '@/util/getScrollAnimation'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
-import Image from 'next/image'
 
 const Hero = ({
   listUser = [
@@ -27,7 +28,7 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
+    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id={Sections.ABOUT}>
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"

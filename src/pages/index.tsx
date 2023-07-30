@@ -1,8 +1,11 @@
-import Feature from '@/components/Feature'
-import Hero from '@/components/Hero'
+import Contact from '@/components/Sections/Contact'
+import FAQs from '@/components/Sections/FAQs'
+import Hero from '@/components/Sections/About'
 import Layout from '@/components/Layout/Layout'
-import Pricing from '@/components/Pricing'
+import Reviews from '@/components/Sections/Reviews'
 import SeoHead from '@/components/SeoHead'
+import Services from '@/components/Sections/Services'
+import Values from '@/components/Sections/Values'
 
 export default function Home() {
   return (
@@ -10,8 +13,11 @@ export default function Home() {
       <SeoHead title="SY Planning: Home" />
       <Layout>
         <Hero />
-        <Feature />
-        <Pricing />
+        <Services />
+        <Values />
+        <FAQs />
+        <Contact />
+        <Reviews />
       </Layout>
     </>
   )

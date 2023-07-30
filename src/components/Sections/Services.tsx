@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import ScrollAnimationWrapper from './Layout/ScrollAnimationWrapper'
+import ScrollAnimationWrapper from '../Layout/ScrollAnimationWrapper'
+import { Sections } from '../Layout/Layout.helpers'
 import getScrollAnimation from '@/util/getScrollAnimation'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
@@ -11,13 +12,13 @@ const features = [
   'No specific time limits.',
 ]
 
-const Feature = () => {
+const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), [])
 
   return (
     <div
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="feature"
+      id={Sections.SERVICES}
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
@@ -69,4 +70,4 @@ const Feature = () => {
   )
 }
 
-export default Feature
+export default Services
