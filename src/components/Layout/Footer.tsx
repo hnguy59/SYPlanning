@@ -1,11 +1,10 @@
+import { FacebookRounded, Instagram, Twitter } from '@mui/icons-material'
+
 import LogoVPN from '../../../public/assets/Logo.svg'
-import Facebook from '../../../public/assets/Icon/facebook.svg'
-import Twitter from '../../../public/assets/Icon/twitter.svg'
-import Instagram from '../../../public/assets/Icon/instagram.svg'
 
 const Footer = () => {
   return (
-    <div className="bg-white-300 pt-44 pb-24">
+    <footer className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           <LogoVPN className="h-8 w-auto mb-6" />
@@ -13,9 +12,9 @@ const Footer = () => {
             <strong className="font-medium">SY Planning</strong> is a private virtual network that
             has unique features and has high security.
           </p>
-          <div className="flex w-full mt-2 mb-8 -mx-2">
+          <div className="flex w-full mt-2 mb-8 -mx-2 text-black-500">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Facebook className="h-6 w-6" />
+              <FacebookRounded className="h-6 w-6" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
               <Twitter className="h-6 w-6" />
@@ -64,7 +63,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

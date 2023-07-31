@@ -1,9 +1,11 @@
 import { Sections, navLinks } from './Layout.helpers'
 import { useEffect, useState } from 'react'
 
+import { FacebookRounded } from '@mui/icons-material'
 import Image from 'next/image'
 import { Link as LinkScroll } from 'react-scroll'
 import Logo from '../../../public/images/white-logo.png'
+import { siteData } from '@/util/data'
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState<Sections>(Sections.ABOUT)
@@ -43,8 +45,8 @@ const Header = () => {
                     className={
                       'px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative' +
                       (activeLink === section
-                        ? ' text-orange-500 animation-active '
-                        : ' text-black-500 hover:text-orange-500 a')
+                        ? ' text-black-500 animation-active '
+                        : ' text-black-500 hover:text-black-500')
                     }
                   >
                     {title}
@@ -52,6 +54,15 @@ const Header = () => {
                 </li>
               )
             })}
+            <li>
+              <a
+                className="px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative"
+                target="_blank"
+                href={siteData.facebook}
+              >
+                <FacebookRounded className="h-8 w-8" />
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -74,26 +85,11 @@ const Header = () => {
                     className={
                       'mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all ' +
                       (activeLink === section
-                        ? '  border-orange-500 text-orange-500'
+                        ? '  border-black-500 text-black-500'
                         : ' border-transparent')
                     }
                   >
-                    {icon ?? (
-                      <svg
-                        className="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    )}
+                    {/* {icon} */}
                     {title}
                   </LinkScroll>
                 </li>

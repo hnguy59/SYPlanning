@@ -1,40 +1,32 @@
-import { ReactNode } from 'react'
+import {
+  DesignServicesOutlined,
+  InfoOutlined,
+  PermContactCalendarOutlined,
+  SvgIconComponent,
+} from '@mui/icons-material'
 
 export enum Sections {
   ABOUT = 'about',
   SERVICES = 'services',
-  VALUES = 'values',
-  FAQS = 'faqs',
   CONTACT = 'contact',
-  REVIEWS = 'reviews',
 }
 
 export interface INavLinks {
   title: string
   section: Sections
-  icon?: ReactNode
+  icon: SvgIconComponent
 }
 
 export const navLinks: INavLinks[] = [
-  { title: 'About', section: Sections.ABOUT },
+  { title: 'About', section: Sections.ABOUT, icon: InfoOutlined },
   {
     title: 'Services',
     section: Sections.SERVICES,
-  },
-  {
-    title: 'Values',
-    section: Sections.VALUES,
-  },
-  {
-    title: 'FAQs',
-    section: Sections.FAQS,
+    icon: DesignServicesOutlined,
   },
   {
     title: 'Contact',
     section: Sections.CONTACT,
-  },
-  {
-    title: 'Reviews',
-    section: Sections.REVIEWS,
+    icon: PermContactCalendarOutlined,
   },
 ]
