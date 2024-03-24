@@ -2,6 +2,12 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx,js,jsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        bridge: "url('/images/generic/bridge.jpg')",
+        // portrait:
+        //   "linear-gradient(to bottom, rgba(255,255,255,0) 20%, rgba(255,255,255,1)), url('/images/portrait/SY_0022-bw-removedbg.png')",
+        portrait: "url('/images/portrait/SY_0022-bw.jpg')",
+      },
       colors: {
         primary: {
           50: '#f8fafc',

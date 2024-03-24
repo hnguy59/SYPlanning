@@ -1,25 +1,25 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 export default function Services() {
   return (
-    <section id="home-services">
+    <section id="home-services" className="bg-white">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900">
             Key Services
           </h2>
         </div>
-        <div className="space-y-8 flex flex-col sm:gap-2 xl:gap-4">
+        <div className="space-y-8 flex flex-col">
           {/* Pricing Card */}
-          <div className="flex flex-row mx-auto gap-8 text-gray-900 bg-white">
+          <div className="flex flex-row mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="rounded-3xl w-1/3"
-              src="/images/aerial-houses.jpg"
+              className="rounded-l-lg w-1/3 neutralscale object-cover object-left"
+              src="/images/generic/moree-railway.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-2/3">
+            <div className="w-2/3 p-8">
               <h3 className="mb-4 text-2xl font-semibold">For Local Councils</h3>
               {/* List */}
               <ul role="list" className="space-y-4 text-left">
@@ -110,15 +110,15 @@ export default function Services() {
             </div>
           </div>
           {/* Pricing Card */}
-          <div className="flex flex-row-reverse mx-auto gap-8 text-gray-900 bg-white">
+          <div className="flex flex-row-reverse mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="rounded-3xl w-1/3"
-              src="/images/aerial-houses.jpg"
+              className="rounded-r-lg w-1/3 neutralscale object-cover object-left "
+              src="/images/generic/planning-image.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-2/3">
+            <div className="w-2/3 p-8">
               <h3 className="mb-4 text-2xl font-semibold">For Industry Professionals</h3>
               {/* List */}
               <ul role="list" className="space-y-4 text-left">
@@ -134,15 +134,15 @@ export default function Services() {
             </div>
           </div>
           {/* Pricing Card */}
-          <div className="flex flex-row mx-auto gap-8 text-gray-900 bg-white">
+          <div className="flex flex-row mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="rounded-3xl w-1/3"
+              className="rounded-l-lg w-1/3 neutralscale object-cover object-right"
               src="/images/aerial-houses.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-2/3">
+            <div className="w-2/3 p-8">
               <h3 className="mb-4 text-2xl font-semibold">
                 For Property Owners, Developers & Businesses
               </h3>

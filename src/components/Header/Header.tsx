@@ -1,9 +1,9 @@
 'use client'
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from 'next/image'
+import { useState } from 'react'
 
-import { IconBrandFacebook, IconMenu2 } from '@tabler/icons-react';
+import { IconBrandFacebook, IconMenu2 } from '@tabler/icons-react'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 left-0 z-50 bg-white/90 bg-blur">
-      <nav className="border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav className="border-neutral-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#home-hero" className="flex items-center">
             <Image
@@ -28,14 +28,14 @@ export default function Header() {
           <div className="flex items-center lg:order-2">
             <a
               href="#"
-              className="rounded border-2 bg-transparent hover:bg-#316FF6 border-gray-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
+              className="rounded border-2 bg-transparent hover:bg-#316FF6 border-neutral-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
             >
               <IconBrandFacebook strokeWidth={1.5} />
             </a>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-2 ml-1 text-sm text-neutral-500 rounded-lg lg:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200"
               aria-controls="mobile-menu-2"
               aria-expanded="false"
               onClick={handleClickMobileMenuButton}
@@ -54,7 +54,7 @@ export default function Header() {
               <li>
                 <a
                   href="#home-about-us"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   About
                 </a>
@@ -62,7 +62,7 @@ export default function Header() {
               <li>
                 <a
                   href="#home-services"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   Services
                 </a>
@@ -70,7 +70,7 @@ export default function Header() {
               <li>
                 <a
                   href="#home-faq"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   FAQs
                 </a>
@@ -78,7 +78,7 @@ export default function Header() {
               <li>
                 <a
                   href="#home-contact-us"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   Contact
                 </a>

@@ -1,48 +1,54 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 export default function ContactUs() {
   return (
-    <section id="home-contact-us">
+    <section id="home-contact-us" className="bg-neutral-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Contact Us</h2>
-        <p className="mb-4 lg:mb-8 font-light text-gray-500 sm:text-xl">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-200">Contact Us</h2>
+        <p className="mb-4 lg:mb-8 font-light text-neutral-400 sm:text-xl">
           Got a technical issue? Want to send feedback about a beta feature? Need details about our
           Business plan? Let us know.
         </p>
         <div className="flex flex-row gap-16">
           <form action="#" className="space-y-8 w-1/2">
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
+              <label htmlFor="email" className="block mb-2 text-sm font-semibold text-neutral-300">
                 Your email
               </label>
               <input
                 type="email"
                 id="email"
-                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                className="shadow-sm bg-neutral-900 border border-neutral-300 text-neutral-400 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                 placeholder="name@flowbite.com"
                 required
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="subject"
+                className="block mb-2 text-sm font-semibold text-neutral-300"
+              >
                 Subject
               </label>
               <input
                 type="text"
                 id="subject"
-                className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                className="block p-3 w-full text-sm text-neutral-400 bg-neutral-900 rounded-lg border border-neutral-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Let us know how we can help you"
                 required
               />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 ">
+              <label
+                htmlFor="message"
+                className="block mb-2 text-sm font-semibold text-neutral-300 "
+              >
                 Your message
               </label>
               <textarea
                 id="message"
                 rows={6}
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                className="block p-2.5 w-full text-sm text-neutral-400 bg-neutral-900 rounded-lg shadow-sm border border-neutral-300 focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Leave a comment..."
                 defaultValue={''}
               />
@@ -55,8 +61,8 @@ export default function ContactUs() {
             </button>
           </form>
           <Image
-            className="rounded-3xl w-1/2"
-            src="/images/planning-image.jpg"
+            className="rounded-lg w-1/2 object-center object-cover grayscale"
+            src="/images/generic/maps.jpg"
             alt={'planning image'}
             width={500}
             height={500}
