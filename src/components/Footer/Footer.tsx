@@ -14,10 +14,10 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl text-center">
         <a
           href="#"
-          className="flex justify-center items-center text-2xl font-semibold text-neutral-900"
+          className="flex w-fit m-auto justify-center items-center text-2xl font-semibold text-neutral-900"
         >
           <Image
-            src="/images/white-logo.png"
+            src="/images/logo/white-logo.png"
             className=""
             alt="SY Planning Logo"
             width={64}

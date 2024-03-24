@@ -2,6 +2,8 @@
 
 import Script from 'next/script'
 
+import { Divider } from '@chakra-ui/react'
+
 export default function Testimonials() {
   return (
     <section id="home-testimonials" className="bg-white">
@@ -16,6 +18,7 @@ export default function Testimonials() {
           ></Script>
         </div>
       </div>
+      <Divider />
     </section>
   )
 }

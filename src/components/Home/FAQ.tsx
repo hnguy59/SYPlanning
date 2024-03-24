@@ -17,7 +17,7 @@ export default function FAQ() {
           <Accordion allowToggle allowMultiple>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between items-center">
+                <AccordionButton className="flex justify-between text-left">
                   How long does it take to obtain a Development Approval from Council?
                   <AccordionIcon />
                 </AccordionButton>
@@ -35,7 +35,7 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between items-center">
+                <AccordionButton className="flex justify-between text-left">
                   Can you guarantee Development Approval?
                   <AccordionIcon />
                 </AccordionButton>
@@ -50,7 +50,7 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between items-center">
+                <AccordionButton className="flex justify-between text-left">
                   Which Council Local Government Areas do you service?
                   <AccordionIcon />
                 </AccordionButton>
@@ -68,7 +68,7 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between items-center">
+                <AccordionButton className="flex justify-between text-left">
                   How can I meet you?
                   <AccordionIcon />
                 </AccordionButton>

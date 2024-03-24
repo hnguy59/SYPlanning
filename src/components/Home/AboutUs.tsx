@@ -1,7 +1,7 @@
 export default function AboutUs() {
   return (
-    <section id="home-about-us" className=" bg-white mt-24">
-      <div className="gap-8 items-center px-4 mx-auto max-w-screen-xl rounded-lg lg:grid lg:grid-cols-2 lg:px-6 ">
+    <section id="home-about-us" className=" bg-white">
+      <div className="gap-8 items-center px-4 mx-auto max-w-screen-xl rounded-lg md:grid md:grid-cols-2 md:px-6 ">
         <div className="font-light text-neutral-500 sm:text-lg py-16 rounded-lg">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-700">
             Warm welcome
@@ -27,7 +27,7 @@ export default function AboutUs() {
             drop a message via the “contact us” page and I will be in touch as soon as possible.
           </p>
         </div>
-        <div className="grid grid-cols-1 rounded-lg gap-4 bg-left bg-no-repeat bg-contain aspect-square h-full bg-portrait"></div>
+        <div className="grid grid-cols-1 flex-1 rounded-lg gap-4 bg-top md:bg-left-bottom bg-no-repeat bg-contain aspect-square h-full bg-portrait"></div>
       </div>
     </section>
   )

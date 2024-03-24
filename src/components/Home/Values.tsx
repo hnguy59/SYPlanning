@@ -4,7 +4,7 @@ export default function Values() {
   return (
     <section id="home-values" className="bg-neutral-900">
       <div className="flex flex-col py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="flex flex-row gap-16 ">
+        <div className="flex flex-col gap-4 lg:flex-row lg:gap-16 ">
           <div className="flex-1">
             <Image
               className="rounded-lg object-cover object-right"

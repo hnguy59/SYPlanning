@@ -10,8 +10,8 @@ export default function Hero() {
         <div className="w-full m-auto absolute top-0 left-0 h-full">
           <div className="flex flex-col items-center justify-between h-full text-white p-12">
             <Image
-              src="/images/black-logo.png"
-              className=""
+              src="/images/logo/logo.jpg"
+              className="rounded-full"
               alt="SY Planning Logo"
               width={400}
               height={400}

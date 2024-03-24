@@ -15,17 +15,18 @@ export default function Header() {
   return (
     <header className="sticky top-0 left-0 z-50 bg-white/90 bg-blur">
       <nav className="border-neutral-200 px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex flex-wrap items-center mx-auto max-w-screen-xl gap-8">
           <a href="#home-hero" className="flex items-center">
             <Image
-              src="/images/black-logo.png"
-              className="h-10 sm:h-14"
+              src="/images/logo/logo-long.png"
+              className="h-10 sm:h-14 object-cover w-fit object-left"
               alt="SY Planning Logo"
-              width={64}
-              height={64}
+              width={462}
+              height={118}
             />
           </a>
-          <div className="flex items-center lg:order-2">
+          <div className="flex flex-grow"></div>
+          <div className="flex items-center flex-end lg:order-2">
             <a
               href="#"
               className="rounded border-2 bg-transparent hover:bg-#316FF6 border-neutral-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
@@ -45,16 +46,24 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 ${
+            className={`justify-between flex-end items-center w-full lg:flex lg:w-auto lg:order-1 ${
               isMobileMenuOpen ? 'flex' : 'hidden'
             }`}
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="flex flex-col mt-4 font-medium w-full lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <a
+                  href="#home-testimonials"
+                  className="block py-2 pr-4 text-center pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                >
+                  Reviews
+                </a>
+              </li>
               <li>
                 <a
                   href="#home-about-us"
-                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 text-center pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   About
                 </a>
@@ -62,7 +71,7 @@ export default function Header() {
               <li>
                 <a
                   href="#home-services"
-                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 text-center pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   Services
                 </a>
@@ -70,15 +79,15 @@ export default function Header() {
               <li>
                 <a
                   href="#home-faq"
-                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 text-center pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
-                  FAQs
+                  FAQ
                 </a>
               </li>
               <li>
                 <a
                   href="#home-contact-us"
-                  className="block py-2 pr-4 pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
+                  className="block py-2 pr-4 text-center pl-3 text-neutral-700 border-b border-neutral-100 hover:bg-neutral-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0"
                 >
                   Contact
                 </a>

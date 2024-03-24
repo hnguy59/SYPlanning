@@ -10,8 +10,11 @@ export default function ContactUs() {
           Business plan? Let us know.
         </p>
         <div className="flex flex-row gap-16">
-          <form action="#" className="space-y-8 w-1/2">
-            <div>
+          <form
+            action="#"
+            className="flex flex-col items-center lg:items-start space-y-8 w-full lg:w-1/2"
+          >
+            <div className="w-full">
               <label htmlFor="email" className="block mb-2 text-sm font-semibold text-neutral-300">
                 Your email
               </label>
@@ -19,11 +22,11 @@ export default function ContactUs() {
                 type="email"
                 id="email"
                 className="shadow-sm bg-neutral-900 border border-neutral-300 text-neutral-400 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                placeholder="name@flowbite.com"
+                placeholder="example@domain.com"
                 required
               />
             </div>
-            <div>
+            <div className="w-full">
               <label
                 htmlFor="subject"
                 className="block mb-2 text-sm font-semibold text-neutral-300"
@@ -38,7 +41,7 @@ export default function ContactUs() {
                 required
               />
             </div>
-            <div className="sm:col-span-2">
+            <div className="sm:col-span-2 w-full">
               <label
                 htmlFor="message"
                 className="block mb-2 text-sm font-semibold text-neutral-300 "
@@ -61,7 +64,7 @@ export default function ContactUs() {
             </button>
           </form>
           <Image
-            className="rounded-lg w-1/2 object-center object-cover grayscale"
+            className="hidden lg:flex rounded-lg w-1/2 object-center object-cover grayscale"
             src="/images/generic/maps.jpg"
             alt={'planning image'}
             width={500}
