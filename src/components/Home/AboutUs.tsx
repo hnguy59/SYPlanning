@@ -27,7 +27,7 @@ export default function AboutUs() {
             drop a message via the “contact us” page and I will be in touch as soon as possible.
           </p>
         </div>
-        <div className="grid grid-cols-1 flex-1 rounded-lg gap-4 bg-top md:bg-left-bottom bg-no-repeat bg-contain aspect-square h-full bg-portrait"></div>
+        <div className="grid grid-cols-1 flex-1 rounded-lg gap-4 bg-top md:bg-left-bottom w-full bg-no-repeat bg-contain aspect-square h-full bg-portrait"></div>
       </div>
     </section>
   )

@@ -1,36 +1,28 @@
 import Image from 'next/image'
 
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconMail,
-  IconPhone,
-} from '@tabler/icons-react'
-
 export default function Footer() {
   return (
     <footer className="p-4 bg-white md:p-8 lg:p-10 border-t">
       <div className="mx-auto max-w-screen-xl text-center">
         <a
           href="#"
-          className="flex w-fit m-auto justify-center items-center text-2xl font-semibold text-neutral-900"
+          className="flex w-fit m-auto justify-center items-center text-2xl mb-6 font-semibold text-neutral-900"
         >
           <Image
-            src="/images/logo/white-logo.png"
-            className=""
+            src="/images/logo/logo-long.png"
+            className="h-10 object-cover w-fit"
             alt="SY Planning Logo"
-            width={64}
-            height={64}
+            width={462}
+            height={118}
           />
         </a>
-        <div className="my-6 text-neutral-500 flex flex-row gap-4 items-center justify-center">
+        {/* <div className="my-6 text-neutral-500 flex flex-row gap-4 items-center justify-center">
           <IconBrandFacebook />
           <IconBrandInstagram />
           <IconBrandLinkedin />
           <IconMail />
           <IconPhone />
-        </div>
+        </div> */}
         <ul className="flex flex-wrap justify-center items-center mb-6 text-neutral-900">
           <li>
             <a href="#home-hero" className="mr-4 hover:underline md:mr-6 ">
@@ -39,7 +31,7 @@ export default function Footer() {
           </li>
           <li>
             <a href="#home-testimonials" className="mr-4 hover:underline md:mr-6">
-              Testimonials
+              Reviews
             </a>
           </li>
           <li>
@@ -55,11 +47,6 @@ export default function Footer() {
           <li>
             <a href="#home-services" className="mr-4 hover:underline md:mr-6">
               Services
-            </a>
-          </li>
-          <li>
-            <a href="#home-process" className="mr-4 hover:underline md:mr-6">
-              Process
             </a>
           </li>
           <li>

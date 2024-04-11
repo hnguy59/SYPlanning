@@ -17,12 +17,12 @@ export default function FAQ() {
           <Accordion allowToggle allowMultiple>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between text-left">
+                <AccordionButton className="flex justify-between text-left !px-0 lg:!px-4">
                   How long does it take to obtain a Development Approval from Council?
                   <AccordionIcon />
                 </AccordionButton>
               </h3>
-              <AccordionPanel>
+              <AccordionPanel className="!px-0 lg:!px-4">
                 <p className="text-neutral-500">
                   The time required to obtain approval from initial consultation to development
                   approval will usually take months or more than a year (if it is a complex and
@@ -35,12 +35,12 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between text-left">
+                <AccordionButton className="flex justify-between text-left !px-0 lg:!px-4">
                   Can you guarantee Development Approval?
                   <AccordionIcon />
                 </AccordionButton>
               </h3>
-              <AccordionPanel>
+              <AccordionPanel className="!px-0 lg:!px-4">
                 <p className="text-neutral-500">
                   While I have achieved 100% approval rate thus far. I cannot guarantee that all
                   projects will be approved by Council. However, I will endeavour identify and
@@ -50,12 +50,12 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between text-left">
+                <AccordionButton className="flex justify-between text-left !px-0 lg:!px-4">
                   Which Council Local Government Areas do you service?
                   <AccordionIcon />
                 </AccordionButton>
               </h3>
-              <AccordionPanel>
+              <AccordionPanel className="!px-0 lg:!px-4">
                 <p className="text-neutral-500">
                   Given the nature of the NSW Planning System, I can provide town planning services
                   for any property within the New South Wales. Specifically, I have completed
@@ -68,16 +68,19 @@ export default function FAQ() {
             </AccordionItem>
             <AccordionItem>
               <h3 className="flex items-center text-lg font-medium text-neutral-900">
-                <AccordionButton className="flex justify-between text-left">
+                <AccordionButton className="flex justify-between text-left !px-0 lg:!px-4">
                   How can I meet you?
                   <AccordionIcon />
                 </AccordionButton>
               </h3>
-              <AccordionPanel>
+              <AccordionPanel className="!px-0 lg:!px-4">
                 <p className="text-neutral-500">
                   As I operate the business from my home in Queensland, the best way to meet would
-                  be via a Teams or Zoom meeting. The best way to be in touch would be to call me on
-                  0432 823 351, or complete the “contact” form below.
+                  be via a Teams or Zoom meeting. The best way to be in touch would be to call me on{' '}
+                  <a href="tel:0432823351" className="font-semibold hover:underline">
+                    0432 823 351
+                  </a>
+                  , or complete the “contact” form below.
                 </p>
               </AccordionPanel>
             </AccordionItem>

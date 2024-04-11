@@ -16,8 +16,12 @@ export default function Hero() {
               width={400}
               height={400}
             />
-            <h2 className="text-5xl font-semi-bold">NSW Development Assessment Specialist</h2>
-            <Button className="w-fit rounded-3xl bg-white">Get in touch now</Button>
+            <h2 className="text-5xl font-semi-bold text-center">
+              Development Application and Approval Specialist
+            </h2>
+            <a href="#home-contact-us">
+              <Button className="w-fit rounded-3xl bg-white">Get in touch now</Button>
+            </a>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-import { IconBrandFacebook, IconMenu2 } from '@tabler/icons-react'
+import { IconMenu2 } from '@tabler/icons-react'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 left-0 z-50 bg-white/90 bg-blur">
       <nav className="border-neutral-200 px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap items-center mx-auto max-w-screen-xl gap-8">
+        <div className="flex flex-wrap items-center mx-auto max-w-screen-xl">
           <a href="#home-hero" className="flex items-center">
             <Image
               src="/images/logo/logo-long.png"
@@ -27,12 +27,6 @@ export default function Header() {
           </a>
           <div className="flex flex-grow"></div>
           <div className="flex items-center flex-end lg:order-2">
-            <a
-              href="#"
-              className="rounded border-2 bg-transparent hover:bg-#316FF6 border-neutral-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
-            >
-              <IconBrandFacebook strokeWidth={1.5} />
-            </a>
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
@@ -46,12 +40,12 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`justify-between flex-end items-center w-full lg:flex lg:w-auto lg:order-1 ${
+            className={`justify-between bg-white/90 flex-end items-center left-0 w-full absolute lg:relative top-[60px] sm:top-[76px] lg:top-0 lg:flex lg:w-auto lg:order-1 ${
               isMobileMenuOpen ? 'flex' : 'hidden'
             }`}
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium w-full lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="flex flex-col font-medium w-full lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <a
                   href="#home-testimonials"

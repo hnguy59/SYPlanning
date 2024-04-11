@@ -64,6 +64,18 @@ export default function Services() {
                   </span>
                 </li>
                 <li className="flex space-x-3">
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-transparent"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                   <span>
                     To ensure Councils are able to meet the assessment timeframes in accordance with
                     the Environmental Planning and Assessment Regulation 2021. Development
@@ -125,9 +137,10 @@ export default function Services() {
                 <li className="flex space-x-3">
                   <span className="w-full">
                     Do you run a DA lodgement service and needing a regular supply of Statement of
-                    Environmental Effects? I offer fixed fee for common development types such as
-                    dwelling houses, outbuildings and dual occupancies with a turn around time of
-                    approximately 2 weeks.{' '}
+                    Environmental Effects? I am experienced in preparing Statement of Environmental
+                    Effects for a wide variety of developments including dwelling houses,
+                    outbuildings, dual occupancies, multi dwelling housing, residential flat
+                    buildings, commercial and industrial developments.
                   </span>
                 </li>
               </ul>

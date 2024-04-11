@@ -1,17 +1,39 @@
+'use client'
+
 import Image from 'next/image'
+import { FormEventHandler, useCallback } from 'react'
+
+interface FormElements extends HTMLFormControlsCollection {
+  email: HTMLInputElement
+  subject: HTMLInputElement
+  message: HTMLTextAreaElement
+}
+interface FormElement extends HTMLFormElement {
+  readonly elements: FormElements
+}
 
 export default function ContactUs() {
+  const handleSubmit: FormEventHandler<FormElement> = useCallback((event) => {
+    event.preventDefault()
+    const formElements = event.currentTarget.elements
+    const email = formElements.email.value
+    const subject = formElements.subject.value
+    const message = formElements.message.value
+
+    console.log({ formElements, email, subject, message })
+  }, [])
   return (
     <section id="home-contact-us" className="bg-neutral-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-neutral-200">Contact Us</h2>
         <p className="mb-4 lg:mb-8 font-light text-neutral-400 sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature? Need details about our
-          Business plan? Let us know.
+          Do you have a question? Leave a message below and I will respond to you as quickly as I
+          can!
         </p>
         <div className="flex flex-row gap-16">
           <form
             action="#"
+            onSubmit={handleSubmit}
             className="flex flex-col items-center lg:items-start space-y-8 w-full lg:w-1/2"
           >
             <div className="w-full">
