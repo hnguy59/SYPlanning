@@ -1,4 +1,4 @@
-import { Fira_Sans } from 'next/font/google';
+import { Fira_Sans } from 'next/font/google'
 
 const fira_sans = Fira_Sans({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

@@ -1,6 +1,6 @@
-import Image from 'next/image'
+'use client'
 
-import { Button } from '@chakra-ui/react'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -19,8 +19,10 @@ export default function Hero() {
             <h2 className="text-5xl font-semi-bold text-center">
               Development Application and Approval Specialist
             </h2>
-            <a href="#home-contact-us">
-              <Button className="w-fit rounded-3xl bg-white">Get in touch now</Button>
+            <a href="#home-contact-us" className="pt-4">
+              <button className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
+                Get in touch now
+              </button>
             </a>
           </div>
         </div>

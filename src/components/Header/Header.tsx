@@ -40,7 +40,7 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`justify-between bg-white/90 flex-end items-center left-0 w-full absolute lg:relative top-[60px] sm:top-[76px] lg:top-0 lg:flex lg:w-auto lg:order-1 ${
+            className={`justify-between bg-white/90 lg:bg-transparent flex-end items-center left-0 w-full absolute lg:relative top-[60px] sm:top-[76px] lg:top-0 lg:flex lg:w-auto lg:order-1 ${
               isMobileMenuOpen ? 'flex' : 'hidden'
             }`}
             id="mobile-menu-2"

@@ -13,16 +13,16 @@ export default function Services() {
           {/* Pricing Card */}
           <div className="flex flex-col lg:flex-row mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="lg:rounded-l-lg rounded-t-lg w-full lg:w-1/3 grayscale object-cover object-left"
+              className="rounded-t-lg lg:rounded-l-lg lg:rounded-r-none w-full lg:w-1/3 grayscale object-cover object-left"
               src="/images/generic/moree-railway.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-full lg:w-2/3 p-8">
+            <div className="w-full lg:w-2/3 p-8 content-center">
               <h3 className="mb-4 text-2xl font-semibold">For Local Councils</h3>
               {/* List */}
-              <ul role="list" className="space-y-4 text-left">
+              <ul className="space-y-4 text-left">
                 <li className="flex space-x-3">
                   {/* Icon */}
                   <svg
@@ -124,16 +124,16 @@ export default function Services() {
           {/* Pricing Card */}
           <div className="flex flex-col lg:flex-row-reverse mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="rounded-t-lg lg:rounded-r-lg w-full lg:w-1/3 grayscale object-cover object-left "
+              className="rounded-t-lg lg:rounded-r-lg lg:rounded-l-none w-full lg:w-1/3 grayscale object-cover object-left "
               src="/images/generic/planning-image.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-full lg:w-2/3 p-8">
+            <div className="w-full lg:w-2/3 p-8 content-center">
               <h3 className="mb-4 text-2xl font-semibold">For Industry Professionals</h3>
               {/* List */}
-              <ul role="list" className="space-y-4 text-left">
+              <ul className="space-y-4 text-left">
                 <li className="flex space-x-3">
                   <span className="w-full">
                     Do you run a DA lodgement service and needing a regular supply of Statement of
@@ -149,18 +149,18 @@ export default function Services() {
           {/* Pricing Card */}
           <div className="flex flex-col lg:flex-row mx-auto text-neutral-900 bg-neutral-200 rounded-lg">
             <Image
-              className="rounded-t-lg lg:rounded-l-lg w-full lg:w-1/3 grayscale object-cover object-right"
+              className="rounded-t-lg lg:rounded-l-lg lg:rounded-r-none w-full lg:w-1/3 grayscale object-cover object-right"
               src="/images/generic/aerial-houses.jpg"
               alt={''}
               width={500}
               height={500}
             />
-            <div className="w-full lg:w-2/3 p-8">
+            <div className="w-full lg:w-2/3 p-8 content-center">
               <h3 className="mb-4 text-2xl font-semibold">
                 For Property Owners, Developers & Businesses
               </h3>
               {/* List */}
-              <ul role="list" className="space-y-4 text-left">
+              <ul className="space-y-4 text-left">
                 <li className="flex space-x-3">
                   {/* Icon */}
                   <svg

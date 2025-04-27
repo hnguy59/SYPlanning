@@ -1,6 +1,6 @@
 import { AboutUs, ContactUs, FAQ, Hero, Services, Testimonials, Values } from '@components'
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Hero />
@@ -8,7 +8,6 @@ export default function Home() {
       <AboutUs />
       <Values />
       <Services />
-      {/* <Process /> */}
       <FAQ />
       <ContactUs />
     </>

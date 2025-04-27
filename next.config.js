@@ -12,6 +12,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
     tsconfigPath: './tsconfig.json',
   },
+  experimental: { optimizePackageImports: ['@chakra-ui/react'] },
 }
 
 module.exports = nextConfig

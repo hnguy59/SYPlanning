@@ -1,13 +1,11 @@
 import Image from 'next/image'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
   return (
     <footer className="p-4 bg-white md:p-8 lg:p-10 border-t">
       <div className="mx-auto max-w-screen-xl text-center">
-        <a
-          href="#"
-          className="flex w-fit m-auto justify-center items-center text-2xl mb-6 font-semibold text-neutral-900"
-        >
+        <div className="flex w-fit m-auto justify-center items-center text-2xl mb-6 font-semibold text-neutral-900">
           <Image
             src="/images/logo/logo-long.png"
             className="h-10 object-cover w-fit"
@@ -15,7 +13,7 @@ export default function Footer() {
             width={462}
             height={118}
           />
-        </a>
+        </div>
         {/* <div className="my-6 text-neutral-500 flex flex-row gap-4 items-center justify-center">
           <IconBrandFacebook />
           <IconBrandInstagram />
@@ -61,11 +59,7 @@ export default function Footer() {
           </li>
         </ul>
         <span className="text-sm text-neutral-500 sm:text-center">
-          © 2024{' '}
-          <a href="#" className="hover:underline">
-            SY Planning
-          </a>
-          . All Rights Reserved.
+          © {currentYear} SY Planning All Rights Reserved.
         </span>
       </div>
     </footer>
