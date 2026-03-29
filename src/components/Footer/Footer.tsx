@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+
   return (
     <footer className="p-4 bg-white md:p-8 lg:p-10 border-t">
       <div className="mx-auto max-w-screen-xl text-center">

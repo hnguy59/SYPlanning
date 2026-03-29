@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image';
-import { FormEvent } from 'react';
+import Image from 'next/image'
+import { FormEvent } from 'react'
 
 interface FormElements extends HTMLFormControlsCollection {
   email: HTMLInputElement

@@ -1,4 +1,4 @@
-import sendgrid, { MailDataRequired } from '@sendgrid/mail';
+import sendgrid, { MailDataRequired } from '@sendgrid/mail'
 
 export async function POST(request: Request) {
   try {
